@@ -25,6 +25,7 @@
   &__play {
     @include flex-all-center;
 
+    fill: var(--light-color);
     position: absolute;
     left: 50%;
     top: 50%;
@@ -44,6 +45,7 @@
   &__muted {
     @include flex-all-center;
 
+    fill: var(--light-color);
     position: absolute;
     left: 32px;
     bottom: 32px;
