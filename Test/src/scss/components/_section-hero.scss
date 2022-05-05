@@ -3,11 +3,8 @@
   &__container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-bottom: 131px;
-  }
-
-  &__content {
-    max-width: 862px;
   }
 
   &__subtitle {
@@ -35,13 +32,14 @@
   &__price {
     display: flex;
     align-items: flex-start;
+    margin-bottom: 18px;
   }
 
   &__text {
     font-weight: 400;
     font-size: 25px;
     line-height: 160%;
-    color: rgba(51, 26, 47, 0.8);
+    color: var(--light-purple-color);
 
     p {
       margin: 0;
@@ -49,13 +47,13 @@
     }
   }
 
-  &__image {
-    width: 435px;
+  &__img {
+    max-width: 620px;
+    max-height: 604px;
   }
 }
 
 .price {
-  margin-bottom: 18px;
 
   &__img {
     margin-right: 25px;
@@ -69,7 +67,7 @@
     font-size: 20px;
     line-height: 29px;
     text-transform: uppercase;
-    color: rgba(51, 26, 47, 0.8);
+    color: var(--light-purple-color);
 
     span {
       font-weight: 700;

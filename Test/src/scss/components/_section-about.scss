@@ -9,17 +9,12 @@
     margin-bottom: 80px;
   }
 
-  &__image {
-    width: 456px;
-    height: 469px;
-  }
-
   &__text {
     margin: 0;
     font-weight: 400;
     font-size: 25px;
     line-height: 160%;
-    color: rgba(51, 26, 47, 0.8);
+    color: var(--light-purple-color);
     max-width: 740px;
   }
 

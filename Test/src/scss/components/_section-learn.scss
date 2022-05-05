@@ -16,6 +16,7 @@
   &__underline {
     position: absolute;
     right: 0;
+    bottom: 0;
     width: 261px;
     height: 7px;
     background: linear-gradient(264.91deg, #7C4EAB 0.73%, #DD51D4 95.85%);
@@ -24,13 +25,13 @@
 
   &__subtitle {
     margin: 0 auto;
-    margin-bottom: 60px;
+    margin-bottom: 81px;
     max-width: 829px;
     font-weight: 400;
     font-size: 25px;
     line-height: 160%;
     text-align: center;
-    color: rgba(51, 26, 47, 0.8);
+    color: var(--light-purple-color);
   }
 
   &__items {
@@ -41,6 +42,17 @@
 
   &__item {
     max-width: 290px;
+  }
+
+  &__icon {
+    margin-bottom: 27px;
+    padding: 11px;
+    fill: var(--light-color);
+    box-shadow: 0px 4px 25px rgba(234, 93, 187, 0.25);
+    background-color: var(--primary-color);
+    border-radius: 15px;
+    width: 70px;
+    height: 70px;
   }
 
   &__item-subtitle {
@@ -57,6 +69,6 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 160%;
-    color: rgba(51, 26, 47, 0.8);
+    color: var(--light-purple-color);
   }
 }
