@@ -116,4 +116,12 @@ a {
   color: var(--purple-color);
 }
 
-svg path { fill: inherit; }
+.title-word {
+  padding-bottom: 10px;
+  border-bottom: 7px solid;
+  // border-image: var(--primary-gradient-color);
+}
+
+.title-number {
+  color: var(--primary-color);
+}

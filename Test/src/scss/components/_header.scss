@@ -1,4 +1,13 @@
 .header {
+  position: relative;
+
+  &__bg {
+    position: absolute;
+    left: -700px;
+    top: -200px;
+    z-index: -1;
+  }
+
   &__container {
     display: flex;
     justify-content: space-between;
@@ -35,7 +44,7 @@
   &__slogan {
     margin: 0;
     margin-left: 22px;
-    max-width: 189px;
+    width: 189px;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
@@ -47,6 +56,7 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
+    padding-left: 30px;
   }
 
   &__item {
@@ -77,5 +87,124 @@
     background-image: url(../img/phone-icon.svg);
     background-repeat: no-repeat;
     background-position: 0;
+  }
+}
+
+.menu {
+  display: none;
+
+  &__icon {
+    fill: var(--primary-color);
+    width: 42px;
+    height: 38px;
+  }
+}
+
+@media screen and (max-width: 1280px){
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .header {
+    &__bg {
+      top: -100px;
+      left: -420px;
+      width: 450px;
+      height: 450px;
+    }
+
+    &__container {
+      padding-top: 17px;
+    }
+
+    &__btn {
+      padding: 4px 32px;
+    }
+  }
+
+  .logo {
+    height: 75px;
+
+    &__img {
+      width: 187px;
+    }
+
+    &__slogan {
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 14px;
+      max-width: 135px;
+    }
+  }
+
+  .nav {
+    &__item {
+      margin-right: 20px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 35px;
+
+      &:first-child a {
+        background-size: 10px;
+        padding-right: 35px;
+        background-position: 97px;
+      }
+    }
+  }
+
+  .contacts {
+    &__link {
+      padding-left: 22px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 35px;
+      background-size: 17px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    &__bg {
+      display: none;
+    }
+
+    &__menu {
+      display: block;
+    }
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .contacts {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .header {
+    &__btn {
+      padding: 0px 19px;
+      font-size: 14px;
+      line-height: 28px;
+    }
+  }
+
+  .logo {
+    &__img {
+      width: 140px;
+      border: none;
+    }
+
+    &__slogan {
+      display: none;
+    }
   }
 }
